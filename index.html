@@ -1,1 +1,1200 @@
+<!DOCTYPE html>
+<html lang="lv">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ==========================================
+         SEO & META DATA
+         ========================================== -->
+    <title>Bezē konditoreja | Kūkas un Kulinārija Rīgas Centrā</title>
+    <meta name="description"
+        content="Bezē konditoreja un kulinārija Rīgā. Uz vietas ceptas smalkmaizītes, tortes uz pasūtījumu, garda kafija un sātīga kulinārija. Mājīga atmosfēra Blaumaņa ielā.">
+    <meta name="keywords"
+        content="konditoreja Rīga, kūkas uz pasūtījumu, bezē, smalkmaizītes, kulinārija, kafija centrs, Blaumaņa iela, Brīvības iela">
+    <meta name="author" content="Bezē konditoreja">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://bezekonditoreja.lv/">
+    <meta property="og:title" content="Bezē konditoreja | Gardākās Kūkas un Kafija Rīgā">
+    <meta property="og:description"
+        content="Svaigi ceptas kūkas, smalkmaizītes un mājas kulinārija Rīgas centrā. Pasūti savu svētku torti jau šodien!">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bezē konditoreja Rīga">
+    <meta name="twitter:description" content="Mājīga konditoreja un kulinārija. Kūkas, kafija un smaids katru dienu.">
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- ==========================================
+         STRUCTURED DATA (SCHEMA.ORG)
+         ========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Bezē konditoreja un kulinārija",
+      "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1200",
+      "telephone": "+37122033883",
+      "email": "bezekonditoreja@gmail.com",
+      "url": "https://bezekonditoreja.lv/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Blaumaņa iela 7",
+        "addressLocality": "Rīga",
+        "postalCode": "LV-1011",
+        "addressCountry": "LV"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 56.955258,
+        "longitude": 24.125327
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "priceRange": "€€",
+      "servesCuisine": ["Pastries", "Cakes", "Latvian Cuisine", "Coffee"],
+      "sameAs": [
+        "https://www.instagram.com/bezekonditoreja",
+        "https://wolt.com/lv/lva/riga/restaurant/beze-bakery-coffee"
+      ]
+    }
+    </script>
+
+    <!-- ==========================================
+         STYLES (CSS)
+         ========================================== -->
+    <style>
+        /* BRAND COLOR PALETTE - WARM BAKERY THEME */
+        :root {
+            /* Brand Color: Dusty Pink */
+            --primary: #CBB4B1;
+            /* Darker Pink for hover/active states */
+            --primary-dark: #A68E8B;
+
+            /* Main Text/Headings: Dark Chocolate (Replaces Black) */
+            --accent: #3E2723;
+
+            /* Backgrounds: Warm Cream */
+            --bg-body: #F9F7F2;
+            --bg-white: #FFFFFF;
+
+            /* Text Colors */
+            --text-main: #4E342E;
+            /* Deep Coffee Brown */
+            --text-muted: #795548;
+            /* Milk Chocolate */
+
+            /* UI Elements */
+            --radius: 8px;
+            --shadow: 0 4px 20px rgba(62, 39, 35, 0.08);
+            --container-width: 1200px;
+            --transition: all 0.3s ease;
+        }
+
+        /* RESET */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent);
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* UTILITIES */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background-color: var(--accent);
+            color: var(--bg-white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 2px solid var(--accent);
+            cursor: pointer;
+            transition: var(--transition);
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--accent);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            padding: 12px 30px;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent);
+            color: var(--bg-white);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(62, 39, 35, 0.05);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .wolt-link {
+            color: #009DE0 !important;
+            font-weight: 600 !important;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 10px;
+            margin-left: 10px;
+            padding-left: 20px;
+            border-left: 1px solid #ddd;
+        }
+
+        .lang-btn {
+            border: none;
+            background: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .lang-btn.active {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .lang-btn:hover {
+            color: var(--accent);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--accent);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 90vh;
+            /* Dark brown overlay to make white text pop on image */
+            background-image: linear-gradient(rgba(62, 39, 35, 0.4), rgba(62, 39, 35, 0.4)), url('data/main.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--bg-white);
+            margin-top: 0;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 20px;
+            font-weight: 400;
+            color: var(--bg-white);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .hero .btn-hero {
+            border: 1px solid var(--bg-white);
+            background-color: transparent;
+            color: var(--bg-white);
+        }
+
+        .hero .btn-hero:hover {
+            background-color: var(--bg-white);
+            color: var(--accent);
+        }
+
+        /* ABOUT SECTION */
+        .about-section {
+            background-color: var(--bg-white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .stat-item strong {
+            display: block;
+            font-size: 2rem;
+            color: var(--primary);
+            font-family: 'Playfair Display';
+        }
+
+        .stat-item span {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--primary);
+            z-index: 0;
+            border-radius: var(--radius);
+        }
+
+        /* SERVICES / OFFERINGS */
+        .services {
+            background-color: var(--bg-body);
+        }
+
+        .services h2 {
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            padding: 40px;
+            text-align: center;
+            border-radius: var(--radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(62, 39, 35, 0.05);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+        }
+
+        /* INTERACTIVE FEATURE: CAKE FINDER */
+        .cake-finder {
+            background-color: var(--accent);
+            /* Dark Chocolate Background */
+            color: var(--bg-body);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cake-finder h2 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .cake-finder p.subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+        }
+
+        .cake-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: var(--radius);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .quiz-step {
+            display: none;
+        }
+
+        .quiz-step.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        .quiz-options {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .quiz-btn {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 12px 24px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            border-radius: 30px;
+        }
+
+        .quiz-btn:hover {
+            background: var(--primary);
+            color: var(--accent);
+        }
+
+        .quiz-result {
+            display: none;
+            margin-top: 20px;
+            animation: fadeIn 0.5s;
+        }
+
+        .quiz-result h3 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .quiz-result p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        .btn-quiz-cta {
+            background-color: var(--bg-white);
+            color: var(--accent);
+            border: none;
+        }
+
+        .btn-quiz-cta:hover {
+            background-color: var(--primary);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* LOCATION & FOOTER */
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 0;
+        }
+
+        .info-panel {
+            background-color: var(--bg-body);
+            padding: 60px 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .info-content {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .info-item {
+            margin-bottom: 30px;
+        }
+
+        .info-item h4 {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .info-item p,
+        .info-item a {
+            color: var(--text-main);
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .info-item a.phone-link {
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-family: 'Playfair Display';
+            border-bottom: 1px solid var(--primary);
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            font-weight: 600;
+            color: var(--accent);
+            border-bottom: 1px solid var(--primary);
+        }
+
+        .map-panel {
+            min-height: 400px;
+        }
+
+        .map-panel iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background-color: var(--accent);
+            color: var(--bg-body);
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            opacity: 0.7;
+        }
+
+        /* MOBILE ACTION BAR */
+        .mobile-action-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: var(--bg-white);
+            padding: 12px;
+            display: none;
+            /* Hidden on desktop */
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            gap: 10px;
+            padding-bottom: calc(12px + env(safe-area-inset-bottom));
+            border-top: 1px solid #eee;
+        }
+
+        .action-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .btn-call {
+            background-color: var(--accent);
+            color: var(--bg-white);
+        }
+
+        .btn-map {
+            background-color: var(--primary);
+            color: var(--accent);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .about-image {
+                order: -1;
+                margin-bottom: 40px;
+            }
+
+            .stats-row {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--bg-white);
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+                border-bottom: 1px solid #eee;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .lang-switcher {
+                border-left: none;
+                padding-left: 0;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .mobile-action-bar {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 70px;
+            }
+
+            /* Space for action bar */
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-panel {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Bezē <span>konditoreja</span></a>
+
+            <!-- Mobile Toggle Icon (Inline SVG) -->
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" data-translate="nav_about" onclick="toggleMenu()">Par mums</a>
+                <a href="#services" data-translate="nav_services" onclick="toggleMenu()">Piedāvājums</a>
+                <a href="#contact" data-translate="nav_contacts" onclick="toggleMenu()">Kontakti</a>
+                <a href="https://wolt.com/lv/lva/riga/restaurant/beze-bakery-coffee" target="_blank" class="wolt-link"
+                    onclick="toggleMenu()">Wolt</a>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="changeLang('lv')">LV</button>
+                    <button class="lang-btn" onclick="changeLang('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLang('ru')">RU</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 data-translate="hero_title">Svētki katru dienu</h1>
+            <p data-translate="hero_subtitle">Mājīga atmosfēra, uz vietas ceptas smalkmaizītes un tortes jūsu
+                skaistākajiem mirkļiem.</p>
+            <a href="#contact" class="btn btn-hero" data-translate="hero_btn">Pasūtīt Kūku</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2 data-translate="about_title">Mūsu Stāsts</h2>
+                <p data-translate="about_text1">Bezē konditoreja un kulinārija ir vieta, kur satiekas garša un
+                    mīlestība. Mēs ticam, ka katra kūka ir mākslas darbs.</p>
+                <p data-translate="about_text2">Pie mums valda mierīga atmosfēra un mājīgs interjers. Piedāvājam plašu
+                    klāstu ar konditorejas izstrādājumiem, sātīgu kulināriju un kafiju.</p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <strong>7k+</strong>
+                        <span data-translate="stat_followers">Sekotāji</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>100%</strong>
+                        <span data-translate="stat_handmade">Roku darbs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="data/image.png" alt="Bezē konditorejas interjers" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2 class="text-center" data-translate="services_title">Ko mēs piedāvājam</h2>
+            <div class="service-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <span class="service-icon">🍰</span>
+                    <h3 data-translate="serv_1_title">Kūkas un Tortes</h3>
+                    <p data-translate="serv_1_desc">Pēc individuāla pasūtījuma gatavotas tortes jūsu svētkiem.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <span class="service-icon">🥐</span>
+                    <h3 data-translate="serv_2_title">Smalkmaizītes</h3>
+                    <p data-translate="serv_2_desc">Uz vietas ceptas bulciņas, pīrādziņi un sāļās maizītes.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <span class="service-icon">🥗</span>
+                    <h3 data-translate="serv_3_title">Kulinārija</h3>
+                    <p data-translate="serv_3_desc">Sātīgi ēdieni, salāti un uzkodas ikdienai.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;">
+                <p style="margin-bottom: 20px; color: var(--text-muted);" data-translate="wolt_text">Vēlaties pasūtīt uz
+                    mājām?</p>
+                <a href="https://wolt.com/lv/lva/riga/restaurant/beze-bakery-coffee" target="_blank"
+                    class="btn-outline">WOLT Delivery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WOW FEATURE: CAKE FINDER -->
+    <section class="cake-finder section-padding">
+        <div class="container">
+            <h2 data-translate="quiz_title">Tortes Izvēles Palīgs</h2>
+            <p class="subtitle" data-translate="quiz_subtitle">Nezini, ko izvēlēties? Ļauj mums ieteikt ideālo garšu!
+            </p>
+
+            <div class="cake-container" id="quizContainer">
+                <!-- Step 1 -->
+                <div class="quiz-step active" id="step1">
+                    <h3 style="color: white; margin-bottom: 30px; font-size: 1.5rem;" data-translate="q1_text">Kādam
+                        notikumam meklējat kūku?</h3>
+                    <div class="quiz-options">
+                        <button class="quiz-btn" onclick="nextStep(1)" data-translate="q_opt_bday">Dzimšanas
+                            diena</button>
+                        <button class="quiz-btn" onclick="nextStep(1)" data-translate="q_opt_kids">Bērnu
+                            ballīte</button>
+                        <button class="quiz-btn" onclick="nextStep(1)" data-translate="q_opt_coffee">Pie
+                            kafijas</button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="quiz-step" id="step2">
+                    <h3 style="color: white; margin-bottom: 30px; font-size: 1.5rem;" data-translate="q2_text">Kāda
+                        garša jums patīk vislabāk?</h3>
+                    <div class="quiz-options">
+                        <button class="quiz-btn" onclick="showResult('choc')" data-translate="q_opt_choc">Šokolādes &
+                            Sātīga</button>
+                        <button class="quiz-btn" onclick="showResult('fruit')" data-translate="q_opt_fruit">Augļu &
+                            Vieglu</button>
+                        <button class="quiz-btn" onclick="showResult('beze')" data-translate="q_opt_beze">Kraukšķīgs
+                            Bezē</button>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div class="quiz-result" id="result">
+                    <h3 id="resultTitle"></h3>
+                    <p id="resultDesc"></p>
+                    <a href="tel:+37122033883" class="btn btn-quiz-cta" data-translate="call_to_order">Zvanīt un
+                        Pasūtīt</a>
+                    <br><br>
+                    <button onclick="resetQuiz()"
+                        style="background:none; border:none; color: rgba(255,255,255,0.5); cursor:pointer; text-decoration:underline;"
+                        data-translate="reset_quiz">Sākt no jauna</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONTACT -->
+    <section id="contact">
+        <div class="location-grid">
+            <div class="info-panel">
+                <div class="info-content">
+                    <h2 style="margin-bottom: 40px;" data-translate="contacts_title">Kontakti</h2>
+
+                    <div class="info-item">
+                        <h4 data-translate="lbl_address">Adrese</h4>
+                        <p>Blaumaņa iela 7, Rīga, LV-1011</p>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">(Ieeja no Stabu ielas / Brīvības iela
+                            76)</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4 data-translate="lbl_phone">Telefons</h4>
+                        <a href="tel:+37122033883" class="phone-link">22 033 883</a>
+                    </div>
+
+                    <div class="info-item">
+                        <h4 data-translate="lbl_email">E-pasts</h4>
+                        <a href="mailto:bezekonditoreja@gmail.com">bezekonditoreja@gmail.com</a>
+                    </div>
+
+                    <div class="info-item">
+                        <h4 data-translate="lbl_hours">Darba laiks</h4>
+                        <p><span style="display:inline-block; width: 60px;">Pr-Pk:</span> 08:00 - 21:00</p>
+                        <p><span style="display:inline-block; width: 60px;">Se-Sv:</span> 10:00 - 19:00</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bezekonditoreja" target="_blank">Instagram
+                            (@bezekonditoreja)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-panel">
+                <!-- Google Maps Embed -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.461502494702!2d24.12032819678955!3d56.958026799999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf003ae34a53%3A0xe49b85dc323e4063!2sBeze%20coffee!5e0!3m2!1sen!2slv!4v1763934419657!5m2!1sen!2slv"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Bezē konditoreja un kulinārija. All Rights
+                Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- MOBILE ACTION BAR -->
+    <div class="mobile-action-bar">
+        <a href="tel:+37122033883" class="action-btn btn-call">
+            📞 <span data-translate="btn_call">Zvanīt</span>
+        </a>
+        <a href="https://www.google.com/maps/dir//Blauma%C5%86a+iela+7,+R%C4%ABga" target="_blank"
+            class="action-btn btn-map">
+            📍 <span data-translate="btn_route">Maršruts</span>
+        </a>
+    </div>
+
+    <!-- ==========================================
+         SCRIPTS (LOGIC & TRANSLATION)
+         ========================================== -->
+    <script>
+        // --- TRANSLATIONS OBJECT ---
+        const translations = {
+            lv: {
+                nav_about: "Par mums",
+                nav_services: "Piedāvājums",
+                nav_contacts: "Kontakti",
+                hero_title: "Svētki katru dienu",
+                hero_subtitle: "Mājīga atmosfēra, uz vietas ceptas smalkmaizītes un tortes jūsu skaistākajiem mirkļiem.",
+                hero_btn: "Pasūtīt Kūku",
+                about_title: "Mūsu Stāsts",
+                about_text1: "Bezē konditoreja un kulinārija ir vieta, kur satiekas garša un mīlestība. Mēs ticam, ka katra kūka ir mākslas darbs.",
+                about_text2: "Pie mums valda mierīga atmosfēra un mājīgs interjers. Piedāvājam plašu klāstu ar konditorejas izstrādājumiem, sātīgu kulināriju un kafiju.",
+                stat_followers: "Sekotāji",
+                stat_handmade: "Roku darbs",
+                services_title: "Ko mēs piedāvājam",
+                serv_1_title: "Kūkas un Tortes",
+                serv_1_desc: "Pēc individuāla pasūtījuma gatavotas tortes jūsu svētkiem.",
+                serv_2_title: "Smalkmaizītes",
+                serv_2_desc: "Uz vietas ceptas bulciņas, pīrādziņi un sāļās maizītes.",
+                serv_3_title: "Kulinārija",
+                serv_3_desc: "Sātīgi ēdieni, salāti un uzkodas ikdienai.",
+                wolt_text: "Vēlaties pasūtīt uz mājām?",
+                quiz_title: "Tortes Izvēles Palīgs",
+                quiz_subtitle: "Nezini, ko izvēlēties? Ļauj mums ieteikt ideālo garšu!",
+                q1_text: "Kādam notikumam meklējat kūku?",
+                q2_text: "Kāda garša jums patīk vislabāk?",
+                call_to_order: "Zvanīt un Pasūtīt",
+                contacts_title: "Kontakti",
+                lbl_address: "Adrese",
+                lbl_phone: "Telefons",
+                lbl_email: "E-pasts",
+                lbl_hours: "Darba laiks",
+                btn_call: "Zvanīt",
+                btn_route: "Maršruts",
+                result_choc: "Šokolādes Trifele",
+                desc_choc: "Jums patiks mūsu bagātīgā šokolādes kūka ar samtainu krēmu. Īsta klasika!",
+                result_fruit: "Augļu Vieglums",
+                desc_fruit: "Gaisīgs biskvīts ar sezonas ogām un vieglu jogurta krēmu.",
+                result_beze: "Firmas Bezē Torte",
+                desc_beze: "Mūsu lepnums - kraukšķīgs bezē ar maigu krēmu un ogām.",
+                q_opt_bday: "Dzimšanas diena",
+                q_opt_kids: "Bērnu ballīte",
+                q_opt_coffee: "Pie kafijas",
+                q_opt_choc: "Šokolādes & Sātīga",
+                q_opt_fruit: "Augļu & Vieglu",
+                q_opt_beze: "Kraukšķīgs Bezē",
+                reset_quiz: "Sākt no jauna"
+            },
+            en: {
+                nav_about: "About Us",
+                nav_services: "Menu",
+                nav_contacts: "Contacts",
+                hero_title: "A Taste of Joy",
+                hero_subtitle: "Cozy atmosphere, freshly baked pastries, and custom cakes for your best moments.",
+                hero_btn: "Order a Cake",
+                about_title: "Our Story",
+                about_text1: "Bezē Bakery is a place where taste meets love. We believe every cake is a work of art.",
+                about_text2: "Enjoy a calm atmosphere and cozy interior. We offer a wide range of pastries, savory dishes, and excellent coffee.",
+                stat_followers: "Followers",
+                stat_handmade: "Handmade",
+                services_title: "Our Offerings",
+                serv_1_title: "Custom Cakes",
+                serv_1_desc: "Made-to-order cakes for your celebrations.",
+                serv_2_title: "Fresh Pastries",
+                serv_2_desc: "Buns, pies, and savory pastries baked on-site.",
+                serv_3_title: "Culinary",
+                serv_3_desc: "Savory meals, salads, and snacks for every day.",
+                wolt_text: "Want delivery?",
+                quiz_title: "Cake Finder",
+                quiz_subtitle: "Don't know what to choose? Let us suggest the perfect flavor!",
+                q1_text: "What is the occasion?",
+                q2_text: "What flavor do you prefer?",
+                call_to_order: "Call to Order",
+                contacts_title: "Contacts",
+                lbl_address: "Address",
+                lbl_phone: "Phone",
+                lbl_email: "Email",
+                lbl_hours: "Opening Hours",
+                btn_call: "Call",
+                btn_route: "Route",
+                result_choc: "Chocolate Truffle",
+                desc_choc: "You will love our rich chocolate cake with velvety cream. A true classic!",
+                result_fruit: "Fruity Delight",
+                desc_fruit: "Airy sponge cake with seasonal berries and light yogurt cream.",
+                result_beze: "Signature Meringue",
+                desc_beze: "Our pride - crispy meringue with soft cream and berries.",
+                q_opt_bday: "Birthday",
+                q_opt_kids: "Kids Party",
+                q_opt_coffee: "With Coffee",
+                q_opt_choc: "Chocolate & Rich",
+                q_opt_fruit: "Fruity & Light",
+                q_opt_beze: "Crispy Meringue",
+                reset_quiz: "Start Over"
+            },
+            ru: {
+                nav_about: "О нас",
+                nav_services: "Меню",
+                nav_contacts: "Контакты",
+                hero_title: "Праздник каждый день",
+                hero_subtitle: "Уютная атмосфера, свежая выпечка и торты для ваших лучших моментов.",
+                hero_btn: "Заказать Торт",
+                about_title: "Наша История",
+                about_text1: "Кондитерская Bezē — это место, где вкус встречается с любовью. Мы верим, что каждый торт — это произведение искусства.",
+                about_text2: "У нас царит спокойная атмосфера и уютный интерьер. Предлагаем широкий выбор кондитерских изделий, кулинарии и отличный кофе.",
+                stat_followers: "Подписчики",
+                stat_handmade: "Ручная работа",
+                services_title: "Что мы предлагаем",
+                serv_1_title: "Торты на заказ",
+                serv_1_desc: "Торты для ваших праздников по индивидуальному заказу.",
+                serv_2_title: "Выпечка",
+                serv_2_desc: "Свежеиспеченные булочки, пирожки и печенье.",
+                serv_3_title: "Кулинария",
+                serv_3_desc: "Сытные блюда, салаты и закуски на каждый день.",
+                wolt_text: "Хотите заказать доставку?",
+                quiz_title: "Помощник выбора",
+                quiz_subtitle: "Не знаете, что выбрать? Мы подскажем идеальный вкус!",
+                q1_text: "Для какого события ищете торт?",
+                q2_text: "Какой вкус вам нравится больше?",
+                call_to_order: "Позвонить и Заказать",
+                contacts_title: "Контакты",
+                lbl_address: "Адрес",
+                lbl_phone: "Телефон",
+                lbl_email: "Email",
+                lbl_hours: "Время работы",
+                btn_call: "Позвонить",
+                btn_route: "Маршрут",
+                result_choc: "Шоколадный Трюфель",
+                desc_choc: "Вам понравится наш насыщенный шоколадный торт с бархатистым кремом.",
+                result_fruit: "Фруктовая Легкость",
+                desc_fruit: "Воздушный бисквит с сезонными ягодами и легким йогуртовым кремом.",
+                result_beze: "Фирменное Безе",
+                desc_beze: "Наша гордость — хрустящее безе с нежным кремом и ягодами.",
+                q_opt_bday: "День рождения",
+                q_opt_kids: "Детский праздник",
+                q_opt_coffee: "К кофе",
+                q_opt_choc: "Шоколадный",
+                q_opt_fruit: "Фруктовый",
+                q_opt_beze: "Хрустящее Безе",
+                reset_quiz: "Начать заново"
+            }
+        };
+
+        // --- LANGUAGE SWITCHER LOGIC ---
+        let currentLang = localStorage.getItem('preferredLang') || 'lv';
+
+        function changeLang(lang) {
+            currentLang = lang;
+            localStorage.setItem('preferredLang', lang);
+
+            // Update text content
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.innerText.toLowerCase() === lang) btn.classList.add('active');
+            });
+
+            // Re-render quiz result if visible to translate it dynamically
+            const resultSection = document.getElementById('result');
+            if (resultSection.style.display === 'block') {
+                const lastResult = resultSection.getAttribute('data-last-result');
+                if (lastResult) showResult(lastResult);
+            }
+        }
+
+        // Initialize Language on Load
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLang(currentLang);
+        });
+
+        // --- MOBILE MENU LOGIC ---
+        function toggleMenu() {
+            // Very simple toggle class for mobile menu
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+
+        // --- QUIZ LOGIC ---
+        function nextStep(current) {
+            document.getElementById('step' + current).classList.remove('active');
+            document.getElementById('step' + (current + 1)).classList.add('active');
+        }
+
+        function showResult(type) {
+            document.getElementById('step2').classList.remove('active');
+            const resultDiv = document.getElementById('result');
+            const title = document.getElementById('resultTitle');
+            const desc = document.getElementById('resultDesc');
+
+            resultDiv.style.display = 'block';
+            resultDiv.setAttribute('data-last-result', type); // Store result type for translation switching
+
+            // Get text based on current language
+            const t = translations[currentLang];
+
+            if (type === 'choc') {
+                title.textContent = t.result_choc;
+                desc.textContent = t.desc_choc;
+            } else if (type === 'fruit') {
+                title.textContent = t.result_fruit;
+                desc.textContent = t.desc_fruit;
+            } else {
+                title.textContent = t.result_beze;
+                desc.textContent = t.desc_beze;
+            }
+        }
+
+        function resetQuiz() {
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('step1').classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
